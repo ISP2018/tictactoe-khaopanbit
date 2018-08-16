@@ -3,10 +3,9 @@ package tictactoe;
 import java.util.function.Predicate;
 
 import javafx.beans.property.BooleanProperty;
-import javafx.beans.property.Property;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.scene.Node;
-
+/** The model for control moves of tictactoe game **/
 
 public class TicTacToeGame {
 	private final int boardsize;
@@ -33,8 +32,8 @@ public class TicTacToeGame {
 	
 	public void startNewGame() {
 		// Avoid nulls. Assign a "none" object to each location on the board.
-		for(int row=0; row<3; row++) 
-			for(int col=0; col<3; col++) pieces[row][col] = Piece.NONE;
+		for(int row=0; row<boardsize; row++) 
+			for(int col=0; col<boardsize; col++) pieces[row][col] = Piece.NONE;
 		// Remove Pieces from the board (view), but not the squares themselves. Use a Predicate to test for Piece.
 		Predicate<Node> isPiece = (node) -> node instanceof Piece;
 		board.getChildren().removeIf(isPiece);
