@@ -88,8 +88,8 @@
 		</junit>
 	</target>
 
-	<target name="jar" depends="compile" >
-		<mkdir dir="dist"/>
+	<target name="jar" depends="compile" 
+		description="create runnable JAR file">
 		
     <jar destfile="dist/tictactoe.jar" basedir="${build.dir}">
          <manifest>
