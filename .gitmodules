@@ -1,3 +1,6 @@
 [submodule "tictactoe-test"]
 	path = tictactoe-test
 	url = https://github.com/ISP2018/tictactoe-test
+[submodule "test"]
+	path = test
+	url = https://github.com/ISP2018/tictactoe-test
