@@ -59,8 +59,8 @@
 	<!-- compile the source code -->
 	<target name="compile" depends="init" description="Compile source code" >
 		<javac srcdir="src" destdir="bin" includeantruntime="false" />
-		    <copy todir="destination dir">
-       <fileset dir="source dir">
+		    <copy todir="${build.dir}">
+       <fileset dir="${src.dir}">
           <include name="**/*.fxml" />
        </fileset>
     </copy>
@@ -96,6 +96,6 @@
             <attribute name ="Main-Class" value = "tictactoe.Main"/>
          </manifest>
     </jar>
-	
+
 
 </project>
