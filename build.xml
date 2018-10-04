@@ -96,6 +96,7 @@
             <attribute name ="Main-Class" value = "tictactoe.Main"/>
          </manifest>
     </jar>
+	</target>
 
 
 </project>
