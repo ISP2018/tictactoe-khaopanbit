@@ -91,7 +91,7 @@
 	<target name="jar" depends="compile" >
 		<mkdir dir="dist"/>
 		
-    <jar destfile="dist/ticTacToe.jar" basedir="${build.dir}">
+    <jar destfile="dist/tictactoe.jar" basedir="${build.dir}">
          <manifest>
             <attribute name ="Main-Class" value = "tictactoe.Main"/>
          </manifest>
