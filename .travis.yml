@@ -15,7 +15,7 @@ git:
 
 # Which JDK to use for build?  You can specifiy more than one.
 jdk:
-  - JDK 1.8.0_131
+  - oraclejdk8
 
 
 # Default build script is "ant test".
